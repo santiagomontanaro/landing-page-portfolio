@@ -1,0 +1,83 @@
+/* switch colors variables */
+$babyBlueEyes: #A2D2FF;
+$babyBlueEyesA: #A2D2FF88;
+$uranianBlue: #BDE0FE;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  width: 620px;
+  color: #212121;
+
+  .main__text {
+    line-height: 1.6;
+    text-justify: distribute;
+    font-size: 1.12em;
+
+    .blue {
+      background-color: $babyBlueEyes;
+      padding: 0 1em;
+    }
+  }
+
+  .blue {
+    background-color: $babyBlueEyes;
+    border: none;
+  }
+
+  .blue:hover {
+    background-color: $uranianBlue;
+  }
+
+  .toggle {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      color: #cdcdcd;
+      margin-right: 1rem;
+
+      .fa {
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    .arrow:hover {
+      color: #212121;
+    }
+
+    .switch {
+      cursor: pointer;
+      padding: .9rem;
+    }
+  }
+
+  .main__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    a {
+      cursor: default;
+    }
+
+  }
+}
+
+button {
+  width: 620px;
+  height: 100%;
+  padding: .6em 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}

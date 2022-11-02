@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Welcome from './components/Welcome';
+import Vuelve from './components/Vuelve';
+import VuelveAtras from './components/VuelveAtras';
+import Ultima from './components/Ultima';
+import Jump from './components/Jump';
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route exact path='/' element={<Welcome />} />
+        <Route path='/vuelve' element={<Vuelve />} />
+        <Route path='/vuelve/atras' element={<VuelveAtras />} />
+        <Route path='/vuelve/atras/ya' element={<Ultima />} />
+        <Route path='/vuelve/atras/ya/jump' element={<Jump />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,67 @@
+/* switch colors variables */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  width: 620px;
+  color: #212121;
+}
+.main .main__text {
+  line-height: 1.6;
+  text-justify: distribute;
+  font-size: 1.12em;
+}
+.main .main__text .blue {
+  background-color: #A2D2FF;
+  padding: 0 1em;
+}
+.main .blue {
+  background-color: #A2D2FF;
+  border: none;
+}
+.main .blue:hover {
+  background-color: #BDE0FE;
+}
+.main .toggle {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+}
+.main .toggle .arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #cdcdcd;
+  margin-right: 1rem;
+}
+.main .toggle .arrow .fa {
+  position: relative;
+  top: 1px;
+}
+.main .toggle .arrow:hover {
+  color: #212121;
+}
+.main .toggle .switch {
+  cursor: pointer;
+  padding: 0.9rem;
+}
+.main .main__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.main .main__btns a {
+  cursor: default;
+}
+
+button {
+  width: 620px;
+  height: 100%;
+  padding: 0.6em 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}/*# sourceMappingURL=Welcome.module.css.map */
