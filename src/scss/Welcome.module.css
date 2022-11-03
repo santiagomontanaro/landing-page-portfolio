@@ -64,4 +64,16 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 4px;
+}
+
+/* query mobile */
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  button {
+    width: 100%;
+    padding: 0.5em 1em;
+  }
 }/*# sourceMappingURL=Welcome.module.css.map */

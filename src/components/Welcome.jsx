@@ -14,7 +14,7 @@ function Welcome() {
         <a href="https://santiagomontanaro.github.io/sm-portfolio/"><button className={s.blue}>Si sos un recruiter serio, elige esta opción 😴💤</button></a>
         <a href="https://open.spotify.com/playlist/2suh095hg4M52p4zFKxo9W?si=3181765835bc463a" target='_blank' rel="noreferrer"><button className={s.blue}>Si te gusta lo atípico, esta opción es mejor y quizás encuentres algo bueno para escuchar *guiño guiño*</button></a>
         <Link to='/vuelve'>
-          <button className={s.blue}>No entres acá</button>
+          <button className={s.blue}>Acá no hay nada</button>
         </Link>
       </div>
     </div>
